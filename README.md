@@ -17,7 +17,7 @@ Raw CSV data from two public datasets is loaded into Snowflake's Bronze layer as
 
 The pipeline separates raw ingestion from transformation logic. Bronze preserves the source data untouched, Silver handles all type casting, null handling, and column standardization, and Gold produces the final business-ready tables that power every dashboard.
 
-###Tech Stack
+### Tech Stack
 Snowflake (data warehouse), SQL (transformations), SnowSQL CLI (data loading), Tableau (executive dashboards), Snowsight (operational dashboards), dbt Cloud (mart-layer models), GitHub (version control).
 
 # Data Story
