@@ -14,8 +14,6 @@ https://github.com/user-attachments/assets/3d44e628-5f50-4963-936d-c4b7cff99445
 ETL & Data Modeling
 Raw CSV data from two public datasets is loaded into Snowflake's Bronze layer as-is, then transformed through Silver (cleaned, typed, renamed) and Gold (aggregated business metrics) using SQL. The Gold layer follows a star schema — fact tables joined to shared dimension tables- optimized for dashboard queries.
 
-<img width="1024" height="1024" alt="Gemini_Generated_Image_51vxv51vxv51vxv5" src="https://github.com/user-attachments/assets/ca6b7c9c-6326-4e3d-a415-619668ded1f8" />
-
 
 The pipeline separates raw ingestion from transformation logic. Bronze preserves the source data untouched, Silver handles all type casting, null handling, and column standardization, and Gold produces the final business-ready tables that power every dashboard.
 
