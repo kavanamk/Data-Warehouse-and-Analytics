@@ -1,0 +1,14 @@
+aptiv-data-platform/
+└── sql/
+    ├── 01_setup.sql                              ← DB + schemas
+    ├── bronze/
+    │   └── 02_raw_tables.sql                     ← raw tables + load
+    ├── silver/
+    │   └── 03_staging.sql                        ← cleaned tables
+    ├── gold/
+    │   ├── 04_dimensions.sql                     ← dim_date, customer, product
+    │   └── 05_facts.sql                          ← all 4 fact tables
+    └── dashboards/
+        ├── 06_executive_sales_summary.sql        ← Tableau queries
+        ├── 07_customer_performance.sql           ← Snowsight queries
+        └── 08_manufacturing_machine_health.sql   ← Snowsight queries
